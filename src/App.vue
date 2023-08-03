@@ -1,14 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <Estudiante/>
+  
+  <div id="app">
+    <NavBar/>
+    <router-view/>
+  </div>
 </template>
 
 <script>
-import Estudiante from './modules/estudiantes/pages/Estudiante.vue'
+import NavBar from './modules/estudiantes/components/NavBar.vue';
 export default {
   name: 'App',
   components: {
-    Estudiante
+    NavBar
   }
 }
 </script>
@@ -19,6 +22,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 </style>
