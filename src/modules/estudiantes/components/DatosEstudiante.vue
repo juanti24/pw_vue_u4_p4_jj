@@ -3,9 +3,9 @@
     <div class="form-group">
       <label class="form-label">Cedula</label>
       <input v-model="cedula" type="text" class="form-input" />
-      <button @click="consultarEstudiante" class="submit-button">
-        Consultar
-      </button>
+      
+
+      <button @click="consultarEstudiante" class="btn btn-danger">Consultar</button>
     </div>
 
     <div class="form-group">
@@ -91,14 +91,14 @@ export default {
   padding: 10px;
   font-size: 16px;
   font-weight: bold;
-  background-color: #007bff;
+  background-color: #ec0d1fd8;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 .submit-button:hover {
-  background-color: #0056b3;
+  background-color: #ec0d1fd8;
 }
 /* Estilos para las etiquetas del formulario */
 .form-label {

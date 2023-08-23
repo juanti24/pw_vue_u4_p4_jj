@@ -24,7 +24,7 @@ const obtenerEstudianteAPI = async (cedula)=>{
 }
 const obtenerEstudianteAPIAxios = async (cedula)=>{
     const headers= {
-        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmRyZXMiLCJpYXQiOjE2OTI3NDg5NTgsImV4cCI6MTY5Mjc1ODk1OH0.YIyjN4GYqNaIQmr32P4Yr2k1wZbxPtQHtHCV_Jcy9gPI-rDg6FTcdmyhBycGcXEJsn9LNuY45dm_Twi3KnnuBw",
+        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmRyZXMiLCJpYXQiOjE2OTI4MjM3NTYsImV4cCI6MTY5MjgzMzc1Nn0.JrARBfS02ULc762gm60QhJuTxr8a1_CO1uanBM21gCwdE3c1ep-8AqTQeyyZtxTwCntaCtcP90l4wR043hXW5Q",
         "Mensaje": "Valor1"
     }
     console.log('AXIOS 2')
@@ -33,7 +33,7 @@ const obtenerEstudianteAPIAxios = async (cedula)=>{
 }
 const ingresarEstudiante = (bodyEstudiante) =>{
     const headers= {
-        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmRyZXMiLCJpYXQiOjE2OTI3NDg5NTgsImV4cCI6MTY5Mjc1ODk1OH0.YIyjN4GYqNaIQmr32P4Yr2k1wZbxPtQHtHCV_Jcy9gPI-rDg6FTcdmyhBycGcXEJsn9LNuY45dm_Twi3KnnuBw",
+        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmRyZXMiLCJpYXQiOjE2OTI4MjM3NTYsImV4cCI6MTY5MjgzMzc1Nn0.JrARBfS02ULc762gm60QhJuTxr8a1_CO1uanBM21gCwdE3c1ep-8AqTQeyyZtxTwCntaCtcP90l4wR043hXW5Q",
         "Mensaje": "Valor1"
     }
 
@@ -42,7 +42,7 @@ const ingresarEstudiante = (bodyEstudiante) =>{
 }
 const actualizarEstudiante = (bodyEstudiante, id) => {
     const headers= {
-        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmRyZXMiLCJpYXQiOjE2OTI3NDg5NTgsImV4cCI6MTY5Mjc1ODk1OH0.YIyjN4GYqNaIQmr32P4Yr2k1wZbxPtQHtHCV_Jcy9gPI-rDg6FTcdmyhBycGcXEJsn9LNuY45dm_Twi3KnnuBw",
+        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmRyZXMiLCJpYXQiOjE2OTI4MjM3NTYsImV4cCI6MTY5MjgzMzc1Nn0.JrARBfS02ULc762gm60QhJuTxr8a1_CO1uanBM21gCwdE3c1ep-8AqTQeyyZtxTwCntaCtcP90l4wR043hXW5Q",
         "Mensaje": "Valor1"
     }
 
@@ -51,7 +51,7 @@ const actualizarEstudiante = (bodyEstudiante, id) => {
 
 const eliminarEstudiante = async (id) =>{
     const headers= {
-        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmRyZXMiLCJpYXQiOjE2OTI3NDg5NTgsImV4cCI6MTY5Mjc1ODk1OH0.YIyjN4GYqNaIQmr32P4Yr2k1wZbxPtQHtHCV_Jcy9gPI-rDg6FTcdmyhBycGcXEJsn9LNuY45dm_Twi3KnnuBw",
+        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmRyZXMiLCJpYXQiOjE2OTI4MjM3NTYsImV4cCI6MTY5MjgzMzc1Nn0.JrARBfS02ULc762gm60QhJuTxr8a1_CO1uanBM21gCwdE3c1ep-8AqTQeyyZtxTwCntaCtcP90l4wR043hXW5Q",
         "Mensaje": "Valor1"
     }
     const data = axios.delete(`http://localhost:8082/API/v1.0/Matricula/estudiantes/${id}`,{headers: headers}).then(r=>r.data);

@@ -16,7 +16,7 @@
         <input v-model="fechaNacimiento" type="datetime" class="form-input" />
 
 
-        <button @click="guardarEstudiante" class="submit-button"> Guardar</button>
+        <button class="btn btn-secondary" @click="guardarEstudiante"> Guardar</button>
     </div>
 </template >
 
